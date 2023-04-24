@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DelOrSearchActivity">
+
+    <!--总体布局-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="-147dp">
+
+        <!--    固定顶部-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#F1F4F4F4"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F6F9FB"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/search"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="提交请求" />
+
+                    <Button
+                        android:id="@+id/back"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="返回主页面" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:gravity="center"
+                    android:text="你好！可以选择条件进行查询："
+                    android:textColor="#403333"
+                    android:textSize="19dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="2"
+                    android:background="#F1F4F4F4"
+                    android:orientation="horizontal"
+                    tools:ignore="MissingConstraints">
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:theme="@style/ThemeSpinner" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!--        <ScrollView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent">-->
+
+        <ListView
+            android:id="@+id/stuDoryInfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <!--        </ScrollView>-->
+
+        <!--        <ScrollView-->
+        <!--            android:layout_width="fill_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:layout_weight="1"-->
+        <!--            tools:ignore="MissingConstraints">-->
+
+        <!--            <LinearLayout-->
+        <!--                android:layout_width="fill_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:orientation="vertical"-->
+        <!--                tools:ignore="MissingConstraints">-->
+
+
+        <!--                <LinearLayout-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="105dp"-->
+        <!--                    android:background="#2196F3"-->
+        <!--                    android:layout_weight="1">-->
+
+        <!--                    <ImageView-->
+        <!--                        android:id="@+id/imageView3"-->
+        <!--                        android:layout_width="30dp"-->
+        <!--                        android:layout_height="match_parent"-->
+        <!--                        android:layout_weight="2"-->
+        <!--                        app:srcCompat="@drawable/b"-->
+        <!--                        />-->
+
+        <!--                    <LinearLayout-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:layout_weight="1"-->
+        <!--                        android:orientation="vertical">-->
+
+        <!--                        <TextView-->
+        <!--                            android:id="@+id/textView17"-->
+        <!--                            android:layout_width="wrap_content"-->
+        <!--                            android:layout_height="wrap_content"-->
+        <!--                            android:layout_weight="2"-->
+        <!--                            android:text="     姓名：小红"-->
+        <!--                            android:textSize="25dp" />-->
+        <!--                        <TextView-->
+        <!--                            android:id="@+id/textView18"-->
+        <!--                            android:layout_width="wrap_content"-->
+        <!--                            android:layout_height="wrap_content"-->
+        <!--                            android:layout_weight="2"-->
+        <!--                            android:text="     寝室号：101"-->
+        <!--                            android:textSize="25dp" />-->
+        <!--                        <TextView-->
+        <!--                            android:id="@+id/textView19"-->
+        <!--                            android:layout_width="wrap_content"-->
+        <!--                            android:layout_height="wrap_content"-->
+        <!--                            android:layout_weight="2"-->
+        <!--                            android:text="     寝室楼：博慧1"-->
+        <!--                            android:textSize="25dp" />-->
+
+        <!--                    </LinearLayout>-->
+        <!--                    <LinearLayout-->
+        <!--                        android:layout_width="50dp"-->
+        <!--                        android:layout_height="match_parent"-->
+        <!--                        android:layout_weight="2"-->
+        <!--                        android:orientation="vertical">-->
+
+        <!--                        <Button-->
+        <!--                            android:id="@+id/button4"-->
+        <!--                            android:layout_width="match_parent"-->
+        <!--                            android:layout_height="52dp"-->
+        <!--                            android:text="点击修改" />-->
+
+        <!--                        <Button-->
+        <!--                            android:id="@+id/delStudent"-->
+        <!--                            android:layout_width="match_parent"-->
+        <!--                            android:layout_height="52dp"-->
+        <!--                            android:text="删除学生" />-->
+        <!--                    </LinearLayout>-->
+        <!--                </LinearLayout>-->
+
+        <!--                <LinearLayout-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="105dp"-->
+        <!--                    android:background="#68ACE3"-->
+        <!--                    android:layout_weight="1">-->
+
+        <!--                    <ImageView-->
+        <!--                        android:id="@+id/imageView4"-->
+        <!--                        android:layout_width="30dp"-->
+        <!--                        android:layout_height="match_parent"-->
+        <!--                        android:layout_weight="2"-->
+        <!--                        app:srcCompat="@drawable/a"-->
+        <!--                        />-->
+
+        <!--                    <LinearLayout-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:layout_weight="1"-->
+        <!--                        android:orientation="vertical">-->
+
+        <!--                        <TextView-->
+        <!--                            android:id="@+id/textView20"-->
+        <!--                            android:layout_width="wrap_content"-->
+        <!--                            android:layout_height="wrap_content"-->
+        <!--                            android:layout_weight="2"-->
+        <!--                            android:text="     姓名：小青"-->
+        <!--                            android:textSize="25dp" />-->
+        <!--                        <TextView-->
+        <!--                            android:id="@+id/textView21"-->
+        <!--                            android:layout_width="wrap_content"-->
+        <!--                            android:layout_height="wrap_content"-->
+        <!--                            android:layout_weight="2"-->
+        <!--                            android:text="     寝室号：101"-->
+        <!--                            android:textSize="25dp" />-->
+        <!--                        <TextView-->
+        <!--                            android:id="@+id/textView22"-->
+        <!--                            android:layout_width="wrap_content"-->
+        <!--                            android:layout_height="wrap_content"-->
+        <!--                            android:layout_weight="2"-->
+        <!--                            android:text="     寝室楼：博慧1"-->
+        <!--                            android:textSize="25dp" />-->
+
+        <!--                    </LinearLayout>-->
+        <!--                    <LinearLayout-->
+        <!--                        android:layout_width="50dp"-->
+        <!--                        android:layout_height="match_parent"-->
+        <!--                        android:layout_weight="2"-->
+        <!--                        android:orientation="vertical">-->
+
+        <!--                        <Button-->
+        <!--                            android:id="@+id/button1"-->
+        <!--                            android:layout_width="match_parent"-->
+        <!--                            android:layout_height="52dp"-->
+        <!--                            android:text="点击修改" />-->
+
+        <!--                        <Button-->
+        <!--                            android:id="@+id/button2"-->
+        <!--                            android:layout_width="match_parent"-->
+        <!--                            android:layout_height="52dp"-->
+        <!--                            android:text="删除学生" />-->
+        <!--                    </LinearLayout>-->
+
+        <!--                </LinearLayout>-->
+
+        <!--                <LinearLayout-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="100dp"-->
+        <!--                    android:background="#91ABBF"-->
+        <!--                    ></LinearLayout>-->
+
+        <!--                <LinearLayout-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="100dp"-->
+        <!--                    android:background="#2196F3"></LinearLayout>-->
+
+        <!--                <LinearLayout-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="100dp"-->
+        <!--                    android:background="#68ACE3"></LinearLayout>-->
+
+        <!--                <LinearLayout-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="100dp"-->
+        <!--                    android:background="#91ABBF"></LinearLayout>-->
+
+        <!--                <LinearLayout-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="100dp"-->
+        <!--                    android:background="#2196F3"></LinearLayout>-->
+
+        <!--                <LinearLayout-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="100dp"-->
+        <!--                    android:background="#68ACE3"></LinearLayout>-->
+
+        <!--            </LinearLayout>-->
+        <!--        </ScrollView>-->
+        <!--中间可滑动布部分-->
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

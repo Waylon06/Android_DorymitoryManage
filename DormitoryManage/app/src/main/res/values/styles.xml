@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ThemeSpinner">
+        <!-- Color when pressed -->
+        <item name="colorAccent">#ffa000</item>
+        <!-- Default color for the dropdown arrow and line -->
+        <item name="colorControlNormal">#ffc107</item>
+    </style>
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar"/>
+</resources>

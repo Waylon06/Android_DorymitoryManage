@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.NoticeActivity">
+
+    <!--总体布局-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <!--    固定顶部-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#F1F4F4F4"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="公告栏"
+                android:textColor="#403333"
+                android:textSize="40dp" />
+        </LinearLayout>
+        <!--    固定顶部-->
+
+        <ListView
+            android:id="@+id/notice"
+            android:layout_width="match_parent"
+            android:layout_height="725dp" />
+        <!--中间可滑动布部分-->
+        <!--        <ScrollView-->
+        <!--            android:layout_width="fill_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:layout_weight="1"-->
+        <!--            tools:ignore="MissingConstraints">-->
+
+        <!--            <LinearLayout-->
+        <!--                android:layout_width="fill_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:orientation="vertical"-->
+        <!--                tools:ignore="MissingConstraints">-->
+        <!--                -->
+        <!--                -->
+
+        <!--                <LinearLayout-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="90dp"-->
+        <!--                    android:orientation="vertical"-->
+        <!--                    android:background="#EFF1F3">-->
+        <!--                    <TextView-->
+        <!--                        android:layout_width="match_parent"-->
+        <!--                        android:layout_height="3dp"-->
+        <!--                        android:background="#00040B"/>-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/textView21"-->
+        <!--                        android:layout_width="match_parent"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:text="法国总统马克龙访华"-->
+        <!--                        android:textSize="40dp"-->
+        <!--                        android:textColor="@color/black"/>-->
+        <!--                    <TextView-->
+        <!--                        android:layout_width="match_parent"-->
+        <!--                        android:layout_height="2dp"-->
+        <!--                        android:background="#99030305"/>-->
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/textView23"-->
+        <!--                        android:layout_width="match_parent"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:textSize="22dp"-->
+        <!--                        android:text="4月5日下午，法国总统马克龙抵达北京。" />-->
+
+        <!--                </LinearLayout>-->
+
+        <!--                <LinearLayout-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="120dp"-->
+        <!--                    android:orientation="vertical"-->
+        <!--                    android:background="#F8FAFB">-->
+        <!--                    <TextView-->
+        <!--                        android:layout_width="match_parent"-->
+        <!--                        android:layout_height="3dp"-->
+        <!--                        android:background="#030305"/>-->
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/textView25"-->
+        <!--                        android:layout_width="match_parent"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:text="关于新冠起源"-->
+        <!--                        android:textSize="40dp"-->
+        <!--                        android:textColor="@color/black"/>-->
+        <!--                    <TextView-->
+        <!--                        android:layout_width="match_parent"-->
+        <!--                        android:layout_height="2dp"-->
+        <!--                        android:background="#99030305"/>-->
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/textView24"-->
+        <!--                        android:layout_width="match_parent"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:textSize="22dp"-->
+        <!--                        android:text="中疾控研究结果表明，通过实验室引入是“极不可能”的。" />-->
+        <!--                    <TextView-->
+        <!--                        android:layout_width="match_parent"-->
+        <!--                        android:layout_height="4dp"-->
+        <!--                        android:background="#01030E"/>-->
+        <!--                </LinearLayout>-->
+
+        <!--                <LinearLayout-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="173dp"-->
+        <!--                    android:orientation="vertical"-->
+        <!--                    android:background="#E6E8EA">-->
+        <!--                    <TextView-->
+        <!--                        android:layout_width="match_parent"-->
+        <!--                        android:layout_height="3dp"-->
+        <!--                        android:background="#01030E"/>-->
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/textView26"-->
+        <!--                        android:layout_width="match_parent"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:text="警方通报“中电科加班事件”调查结果"-->
+        <!--                        android:textSize="37dp"-->
+        <!--                        android:textColor="@color/black"/>-->
+        <!--                    <TextView-->
+        <!--                        android:layout_width="match_parent"-->
+        <!--                        android:layout_height="2dp"-->
+        <!--                        android:background="#99030305"/>-->
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/textView27"-->
+        <!--                        android:layout_width="match_parent"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:textSize="22dp"-->
+        <!--                        android:text="网上发布不实信息者陈某龙目前已被行政拘留。" />-->
+
+        <!--                </LinearLayout>-->
+
+        <!--                <LinearLayout-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="85dp"-->
+        <!--                    android:orientation="vertical"-->
+        <!--                    android:background="#FBFBFB">-->
+        <!--                    <TextView-->
+        <!--                        android:layout_width="match_parent"-->
+        <!--                        android:layout_height="3dp"-->
+        <!--                        android:background="#01030E"/>-->
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/textView28"-->
+        <!--                        android:layout_width="match_parent"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:text="“丫丫”正式移交中方"-->
+        <!--                        android:textSize="40dp"-->
+        <!--                        android:textColor="@color/black"/>-->
+        <!--                    <TextView-->
+        <!--                        android:layout_width="match_parent"-->
+        <!--                        android:layout_height="2dp"-->
+        <!--                        android:background="#99030305"/>-->
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/textView29"-->
+        <!--                        android:layout_width="match_parent"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:textSize="22dp"-->
+        <!--                        android:text="4月7日，旅美大熊猫“丫丫”租借期满。" />-->
+
+        <!--                </LinearLayout>-->
+
+        <!--                <LinearLayout-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="240dp"-->
+        <!--                    android:background="#F8FAFB"-->
+        <!--                    android:orientation="vertical"-->
+        <!--                    >-->
+        <!--                    <TextView-->
+        <!--                        android:layout_width="match_parent"-->
+        <!--                        android:layout_height="3dp"-->
+        <!--                        android:background="#01030E"/>-->
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/textView30"-->
+        <!--                        android:layout_width="match_parent"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:text="东部战区组织环台岛警巡和“联合利剑”演习"-->
+        <!--                        android:textSize="40dp"-->
+        <!--                        android:textColor="@color/black"/>-->
+        <!--                    <TextView-->
+        <!--                        android:layout_width="match_parent"-->
+        <!--                        android:layout_height="2dp"-->
+        <!--                        android:background="#99030305"/>-->
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/textView31"-->
+        <!--                        android:layout_width="match_parent"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:textSize="22dp"-->
+        <!--                        android:text="中国人民解放军东部战区按计划于4月8日至10日在台湾海峡和台岛北部、南部、台岛以东海空域组织环台岛战备警巡和“联合利剑”演习。" />-->
+        <!--                </LinearLayout>-->
+
+        <!--                                <LinearLayout-->
+        <!--                                    android:layout_width="match_parent"-->
+        <!--                                    android:layout_height="100dp"-->
+        <!--                                    android:background="#FAFCFD" android:orientation="vertical"-->
+        <!--                                    >-->
+        <!--                                    <TextView-->
+        <!--                                        android:layout_width="match_parent"-->
+        <!--                                        android:layout_height="3dp"-->
+        <!--                                        android:background="#01030E"/>-->
+        <!--                                    <TextView-->
+        <!--                                        android:id="@+id/textView32"-->
+        <!--                                        android:layout_width="match_parent"-->
+        <!--                                        android:layout_height="wrap_content"-->
+        <!--                                        android:text="“丫丫”正式移交中方"-->
+        <!--                                        android:textSize="40dp"-->
+        <!--                                        android:textColor="@color/black"/>-->
+        <!--                                    <TextView-->
+        <!--                                        android:layout_width="match_parent"-->
+        <!--                                        android:layout_height="2dp"-->
+        <!--                                        android:background="#99030305"/>-->
+        <!--                                    <TextView-->
+        <!--                                        android:id="@+id/textView33"-->
+        <!--                                        android:layout_width="match_parent"-->
+        <!--                                        android:layout_height="wrap_content"-->
+        <!--                                        android:textSize="22dp"-->
+        <!--                                        android:text="4月7日，旅美大熊猫“丫丫”租借期满。" />-->
+        <!--                                </LinearLayout>-->
+
+
+        <!--            </LinearLayout>-->
+        <!--        </ScrollView>-->
+        <!--中间可滑动布部分-->
+
+        <!--底部-->
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1352a3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/menu" />
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/menu_news"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></FrameLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

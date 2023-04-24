@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape xmlns:android="http://schemas.android.com/apk/res/android">
+        <!--对按钮进行圆角化-->
+        <corners android:radius="30dp"/>
+        <!--设置按钮背景颜色-->
+        <solid android:color="#164F5C"/>
+        <!--stroke是按钮边框的实现，每段虚线的长度，和两段虚线之间的颜色和虚线颜色-->
+        <stroke
+            android:width="1dp"
+            android:dashWidth="8dp"
+            android:dashGap="4dp"
+            android:color="#000000"/>
+    </shape>
+
+
+</selector>
